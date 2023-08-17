@@ -30,6 +30,7 @@ import HostLayout from "./components/HostLayout";
 import Error from "./components/Error";
 import { requireAuth } from "../utils";
 import './index.css'
+import './mediaqueries.css'
 
 import "../server";
 

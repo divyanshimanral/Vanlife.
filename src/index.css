@@ -22,19 +22,22 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  width: 100%;
 }
 
 .site-wrapper {
-  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 header {
-  height: 110px;
   display: flex;
   align-items: center;
-  padding-block: 10px;
+  justify-content: space-around;
+  padding-block: 1.2rem;
+  width: 100%;
 }
 
 header .site-logo {
@@ -42,7 +45,7 @@ header .site-logo {
   margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 header a {
@@ -79,9 +82,9 @@ nav > button {
   border: none;
 }
 
-main {
+/* main {
   margin-bottom: 84px;
-}
+} */
 
 footer {
   background-color: #161616;
@@ -131,9 +134,10 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 350px;
   color: white;
-  padding: 45px 23px;
+  padding: 10rem;
+  flex: 1;
+  height: 80vh;
 }
 
 .home-container h1 {
@@ -168,13 +172,17 @@ footer {
 
 /*** ABOUT PAGE ***/
 .about-hero-image {
-  max-width: 100%;
+  width: 100%;
+}
+.about-hero-image > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .about-page-content {
-  padding-inline: 23px;
+  padding: 2rem 12rem;
   color: #161616;
-  margin-bottom: 55px;
 }
 
 .about-page-content h1 {
@@ -186,11 +194,10 @@ footer {
 }
 
 .about-page-cta {
+  margin: 2rem 12rem;
+  padding: 2rem 3rem;
   background-color: #ffcc8d;
   color: #161616;
-  padding-inline: 32px;
-  padding-bottom: 32px;
-  margin-inline: 27px;
   border-radius: 5px;
 }
 
@@ -206,8 +213,22 @@ footer {
 }
 
 /*** VAN PAGES ***/
+.van-tile {
+  min-width: 280px;
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 16px;
+  background: #e0e0e0;
+  box-shadow: 14px 14px 30px #b5b5b5, -14px -14px 30px #ffffff;
+  padding: 2rem;
+}
 .van-list-container {
-  padding-inline: 23px;
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .van-list-filter-buttons {
@@ -221,10 +242,10 @@ footer {
 
 .van-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  gap: 34px;
-  margin-top: 57px;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 .van-tile a {
@@ -305,9 +326,6 @@ i[class*="van-type-"] {
 .van-detail-container .back-button {
   color: black;
   text-decoration: none;
-}
-
-.van-detail-container .back-button:visited {
 }
 
 .van-detail-container .back-button span {
@@ -499,7 +517,13 @@ i[class*="van-type-"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: 27px;
+  justify-content: center;
+  padding: 2rem;
+  height: 80vh;
+}
+.login-container > h3,
+.login-container > h1 {
+  text-align: center;
 }
 
 .login-form {
@@ -507,6 +531,7 @@ i[class*="van-type-"] {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
+  margin-top: 1rem;
 }
 
 .login-form > input {
@@ -514,21 +539,22 @@ i[class*="van-type-"] {
   height: 40px;
   text-indent: 10px;
   font-family: "Inter", sans-serif;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   font-weight: 400;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(104, 104, 104, 0.733);
 }
 
 .login-form > input:focus {
   outline: none;
+  border: 2px solid rgba(35, 190, 0, 0.765);
 }
 
 .login-form > input:first-of-type {
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 10px;
 }
 
 .login-form > input:last-of-type {
-  border-radius: 0px 0px 6px 6px;
-  border-top: none;
+  border-radius: 10px;
 }
 
 .login-form > button {
@@ -536,7 +562,7 @@ i[class*="van-type-"] {
   border: none;
   border-radius: 6px;
   height: 55px;
-  margin-top: 22px;
+  margin-top: 0.5rem;
   color: white;
   font-family: "Inter", sans-serif;
 }
@@ -548,6 +574,7 @@ i[class*="van-type-"] {
 
 .red {
   color: #cc0000;
+  margin-bottom: 0;
 }
 
 .host-dashboard-earnings {

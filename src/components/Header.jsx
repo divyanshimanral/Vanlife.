@@ -41,7 +41,9 @@ export default function Header() {
         <Link to="login" className="login-link">
           <UserCircle2 />
         </Link>
-        <button onClick={fakeLogOut}><LogOut color="#cc0000" /></button>
+        <button width={40} onClick={fakeLogOut}>
+          <LogOut color="#cc0000" />
+        </button>
       </nav>
     </header>
   );
