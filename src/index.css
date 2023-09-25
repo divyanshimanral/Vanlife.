@@ -336,11 +336,13 @@ i[class*="van-type-"] {
   display: flex;
   flex-direction: column;
   color: #161616;
+  padding: 1em 5em 5em 5em;
 }
 
 .van-detail img {
   border-radius: 5px;
   margin-block: 47px;
+  border: 1px solid gray;
 }
 
 .van-detail h2 {
