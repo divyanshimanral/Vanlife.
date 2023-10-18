@@ -14,7 +14,7 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
     
-       https://github.com/divyanshimanral/Vanlife_fcc.git
+       https://github.com/divyanshimanral/Vanlife..git
        cd vanlife-app
 
 2. Install dependencies:
